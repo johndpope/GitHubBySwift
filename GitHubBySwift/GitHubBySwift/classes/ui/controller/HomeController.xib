@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeController" customModule="GitHubBySwift" customModuleProvider="target">
             <connections>
+                <outlet property="mHomeTableView" destination="a7L-J2-UNQ" id="ANP-IO-xbF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,15 +20,22 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNp-k4-TuT">
-                    <rect key="frame" x="166" y="199" width="166" height="92"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a7L-J2-UNQ" userLabel="mHomeTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SbU-Qe-5lv"/>
+                        <outlet property="delegate" destination="-1" id="ACQ-OP-4wA"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a7L-J2-UNQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZfQ-ru-gdy"/>
+                <constraint firstItem="a7L-J2-UNQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sLS-m6-qaX"/>
+                <constraint firstAttribute="bottom" secondItem="a7L-J2-UNQ" secondAttribute="bottom" id="vrb-Hf-tTf"/>
+                <constraint firstAttribute="trailing" secondItem="a7L-J2-UNQ" secondAttribute="trailing" id="wCZ-TJ-el4"/>
+            </constraints>
             <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>

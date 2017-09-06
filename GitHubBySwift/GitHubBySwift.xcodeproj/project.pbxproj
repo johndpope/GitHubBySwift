@@ -24,6 +24,17 @@
 		E51556EF1F5E4AC700B71332 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E51556ED1F5E4AC700B71332 /* HomeController.xib */; };
 		E51556F21F5E4AD400B71332 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556F01F5E4AD400B71332 /* MeController.swift */; };
 		E51556F31F5E4AD400B71332 /* MeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E51556F11F5E4AD400B71332 /* MeController.xib */; };
+		E51556F51F5E500300B71332 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556F41F5E500300B71332 /* HomePresenter.swift */; };
+		E51556F81F5E502C00B71332 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556F61F5E502C00B71332 /* Repository.swift */; };
+		E51556F91F5E502C00B71332 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556F71F5E502C00B71332 /* Owner.swift */; };
+		E51556FF1F5E712700B71332 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556FE1F5E712700B71332 /* AppService.swift */; };
+		E51557011F5E814000B71332 /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51557001F5E814000B71332 /* Observable+Extension.swift */; };
+		E51557031F5E85F000B71332 /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51557021F5E85F000B71332 /* Observable+ObjectMapper.swift */; };
+		E586A5541F5EA7C900A74184 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E586A5521F5EA7C900A74184 /* LoadingView.xib */; };
+		E586A5551F5EA7C900A74184 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586A5531F5EA7C900A74184 /* LoadingView.swift */; };
+		E586A5571F5EA7E300A74184 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = E586A5561F5EA7E300A74184 /* loading.gif */; };
+		E586A55E1F5EB5F800A74184 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586A55C1F5EB5F800A74184 /* HomeCell.swift */; };
+		E586A55F1F5EB5F800A74184 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E586A55D1F5EB5F800A74184 /* HomeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +71,17 @@
 		E51556ED1F5E4AC700B71332 /* HomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
 		E51556F01F5E4AD400B71332 /* MeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
 		E51556F11F5E4AD400B71332 /* MeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeController.xib; sourceTree = "<group>"; };
+		E51556F41F5E500300B71332 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		E51556F61F5E502C00B71332 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		E51556F71F5E502C00B71332 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		E51556FE1F5E712700B71332 /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		E51557001F5E814000B71332 /* Observable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
+		E51557021F5E85F000B71332 /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
+		E586A5521F5EA7C900A74184 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		E586A5531F5EA7C900A74184 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E586A5561F5EA7E300A74184 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		E586A55C1F5EB5F800A74184 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		E586A55D1F5EB5F800A74184 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +149,7 @@
 				E51556B61F5E42F100B71332 /* Assets.xcassets */,
 				E51556B81F5E42F100B71332 /* LaunchScreen.storyboard */,
 				E51556BB1F5E42F100B71332 /* Info.plist */,
+				E586A5561F5EA7E300A74184 /* loading.gif */,
 			);
 			path = GitHubBySwift;
 			sourceTree = "<group>";
@@ -191,6 +214,7 @@
 		E51556D41F5E442C00B71332 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				E51556F41F5E500300B71332 /* HomePresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -215,6 +239,8 @@
 		E51556DF1F5E450600B71332 /* bean */ = {
 			isa = PBXGroup;
 			children = (
+				E51556F61F5E502C00B71332 /* Repository.swift */,
+				E51556F71F5E502C00B71332 /* Owner.swift */,
 			);
 			path = bean;
 			sourceTree = "<group>";
@@ -222,6 +248,9 @@
 		E51556E01F5E450600B71332 /* http */ = {
 			isa = PBXGroup;
 			children = (
+				E51557001F5E814000B71332 /* Observable+Extension.swift */,
+				E51556FE1F5E712700B71332 /* AppService.swift */,
+				E51557021F5E85F000B71332 /* Observable+ObjectMapper.swift */,
 			);
 			path = http;
 			sourceTree = "<group>";
@@ -243,6 +272,8 @@
 		E51556E21F5E457000B71332 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				E586A55C1F5EB5F800A74184 /* HomeCell.swift */,
+				E586A55D1F5EB5F800A74184 /* HomeCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -250,6 +281,8 @@
 		E51556E31F5E457000B71332 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				E586A5521F5EA7C900A74184 /* LoadingView.xib */,
+				E586A5531F5EA7C900A74184 /* LoadingView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -342,10 +375,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E586A5541F5EA7C900A74184 /* LoadingView.xib in Resources */,
+				E586A55F1F5EB5F800A74184 /* HomeCell.xib in Resources */,
 				E51556BA1F5E42F100B71332 /* LaunchScreen.storyboard in Resources */,
 				E51556B71F5E42F100B71332 /* Assets.xcassets in Resources */,
 				E51556E71F5E497D00B71332 /* LauncherController.xib in Resources */,
 				E51556F31F5E4AD400B71332 /* MeController.xib in Resources */,
+				E586A5571F5EA7E300A74184 /* loading.gif in Resources */,
 				E51556EF1F5E4AC700B71332 /* HomeController.xib in Resources */,
 				E51556B51F5E42F100B71332 /* Main.storyboard in Resources */,
 			);
@@ -369,24 +405,30 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GitHubBySwift/Pods-GitHubBySwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -433,14 +475,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E51557031F5E85F000B71332 /* Observable+ObjectMapper.swift in Sources */,
 				E51556F21F5E4AD400B71332 /* MeController.swift in Sources */,
+				E51556F91F5E502C00B71332 /* Owner.swift in Sources */,
+				E586A5551F5EA7C900A74184 /* LoadingView.swift in Sources */,
 				E51556DC1F5E44B100B71332 /* BaseNavigationController.swift in Sources */,
 				E51556EA1F5E4AB800B71332 /* MainController.swift in Sources */,
+				E51556F51F5E500300B71332 /* HomePresenter.swift in Sources */,
 				E51556DE1F5E44E900B71332 /* UIColor-Extension.swift in Sources */,
+				E51556F81F5E502C00B71332 /* Repository.swift in Sources */,
 				E51556E61F5E497D00B71332 /* LauncherController.swift in Sources */,
+				E51556FF1F5E712700B71332 /* AppService.swift in Sources */,
 				E51556EE1F5E4AC700B71332 /* HomeController.swift in Sources */,
 				E51556D81F5E444F00B71332 /* AppDelegate.swift in Sources */,
+				E586A55E1F5EB5F800A74184 /* HomeCell.swift in Sources */,
 				E51556B21F5E42F100B71332 /* ViewController.swift in Sources */,
+				E51557011F5E814000B71332 /* Observable+Extension.swift in Sources */,
 				E51556DB1F5E44B100B71332 /* BaseTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

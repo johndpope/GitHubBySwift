@@ -38,9 +38,6 @@
 		E5D93BC31F60E87900294D01 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D93BC11F60E87900294D01 /* WebViewController.xib */; };
 		E5D93BC51F611B5D00294D01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BC41F611B5D00294D01 /* BaseViewController.swift */; };
 		E5D93BC71F611C5100294D01 /* UINavigationBar-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BC61F611C5100294D01 /* UINavigationBar-Extension.swift */; };
-		E5D93BCB1F6124AB00294D01 /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BC81F6124AB00294D01 /* WRCycleCell.swift */; };
-		E5D93BCC1F6124AB00294D01 /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BC91F6124AB00294D01 /* WRCycleScrollView.swift */; };
-		E5D93BCD1F6124AB00294D01 /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BCA1F6124AB00294D01 /* WRProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,9 +88,6 @@
 		E5D93BC11F60E87900294D01 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		E5D93BC41F611B5D00294D01 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E5D93BC61F611C5100294D01 /* UINavigationBar-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar-Extension.swift"; sourceTree = "<group>"; };
-		E5D93BC81F6124AB00294D01 /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
-		E5D93BC91F6124AB00294D01 /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
-		E5D93BCA1F6124AB00294D01 /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,9 +290,6 @@
 		E51556E31F5E457000B71332 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				E5D93BC81F6124AB00294D01 /* WRCycleCell.swift */,
-				E5D93BC91F6124AB00294D01 /* WRCycleScrollView.swift */,
-				E5D93BCA1F6124AB00294D01 /* WRProxy.swift */,
 				E586A5521F5EA7C900A74184 /* LoadingView.xib */,
 				E586A5531F5EA7C900A74184 /* LoadingView.swift */,
 			);
@@ -424,14 +415,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GitHubBySwift/Pods-GitHubBySwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -440,14 +430,13 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -498,7 +487,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D93BCC1F6124AB00294D01 /* WRCycleScrollView.swift in Sources */,
 				E51557031F5E85F000B71332 /* Observable+ObjectMapper.swift in Sources */,
 				E5D93BC71F611C5100294D01 /* UINavigationBar-Extension.swift in Sources */,
 				E5D93BC21F60E87900294D01 /* WebViewController.swift in Sources */,
@@ -508,8 +496,6 @@
 				E5D93BC51F611B5D00294D01 /* BaseViewController.swift in Sources */,
 				E51556DC1F5E44B100B71332 /* BaseNavigationController.swift in Sources */,
 				E51556EA1F5E4AB800B71332 /* MainController.swift in Sources */,
-				E5D93BCB1F6124AB00294D01 /* WRCycleCell.swift in Sources */,
-				E5D93BCD1F6124AB00294D01 /* WRProxy.swift in Sources */,
 				E51556F51F5E500300B71332 /* HomePresenter.swift in Sources */,
 				E51556DE1F5E44E900B71332 /* UIColor-Extension.swift in Sources */,
 				E51556F81F5E502C00B71332 /* Repository.swift in Sources */,

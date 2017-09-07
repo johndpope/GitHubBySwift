@@ -11,7 +11,5 @@ pod 'Moya/RxSwift'
 pod 'ObjectMapper'
 pod 'MJRefresh'
 pod 'SwiftyGif'
-pod 'SDWebImage', '~> 4.0'
-pod 'Kingfisher'
-pod 'FSPagerView'
+pod 'SDCycleScrollView','~> 1.66'
 end

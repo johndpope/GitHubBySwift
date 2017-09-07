@@ -12,4 +12,6 @@ pod 'ObjectMapper'
 pod 'MJRefresh'
 pod 'SwiftyGif'
 pod 'SDWebImage', '~> 4.0'
+pod 'Kingfisher'
+pod 'FSPagerView'
 end

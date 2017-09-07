@@ -9,10 +9,16 @@
 import UIKit
 import MJRefresh
 import SDWebImage
+import FSPagerView
+
+private let NAVBAR_COLORCHANGE_POINT:CGFloat = -80
+private let IMAGE_HEIGHT:CGFloat = 240
+private let SCROLL_DOWN_LIMIT:CGFloat = 100
+private let LIMIT_OFFSET_Y:CGFloat = -(IMAGE_HEIGHT + SCROLL_DOWN_LIMIT)
 
 class HomeController: UIViewController {
     @IBOutlet weak var mHomeTableView: UITableView!
-
+    
     var loadingView : LoadingView!
     
     // 顶部刷新
@@ -26,17 +32,29 @@ class HomeController: UIViewController {
     
     let cellId = "homeCell" //CellId
     
+    fileprivate let imageNames = ["ic_banner","ic_banner","ic_banner"]
+    fileprivate var numberOfItems = 3
+    
+    var pagerView : FSPagerView!
+    var pageControl: FSPageControl!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initNavigationBar()
         initLoadingView()
         homePresenter.attachView(view: self)
         homePresenter.loadRepositories()
     }
-
-
+    
 }
 
 extension HomeController {
+    
+    func initNavigationBar() {
+        self.title = "主页"
+        
+    }
     
     func initLoadingView() {
         loadingView =  LoadingView.initLoadingView()
@@ -109,9 +127,64 @@ extension HomeController : UITableViewDataSource ,UITableViewDelegate{
         }
     }
     
-    
 }
 
+
+extension HomeController : FSPagerViewDataSource, FSPagerViewDelegate {
+    
+    func initTableViewHeader()  {
+        
+        let pagerViewH : CGFloat = 200
+        let pageControlH : CGFloat = 25
+        
+        pagerView  = FSPagerView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: pagerViewH))
+        pageControl = FSPageControl(frame: CGRect(x: 0, y: pagerViewH - pageControlH, width: kScreenWidth, height: pageControlH))
+        pagerView.addSubview(pageControl)
+        
+        pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
+        pagerView.itemSize = .zero
+            
+        pageControl.numberOfPages = imageNames.count
+        pageControl.contentHorizontalAlignment = .right
+        pageControl.contentInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
+        //自动翻页到下一张
+        pagerView.isInfinite = true
+        //每一页停留的时间
+        pagerView.automaticSlidingInterval = 3.0 - self.pagerView.automaticSlidingInterval
+    
+        mHomeTableView.tableHeaderView = pagerView
+        
+        pagerView.dataSource  = self
+        pagerView.delegate = self
+    }
+    
+    public func numberOfItems(in pagerView: FSPagerView) -> Int {
+        return self.numberOfItems
+    }
+    
+    public func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
+        let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
+        cell.imageView?.image = UIImage(named: self.imageNames[index])
+        cell.imageView?.contentMode = .scaleAspectFill
+        cell.imageView?.clipsToBounds = true
+        cell.textLabel?.text = index.description
+        return cell
+    }
+    
+    func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
+        pagerView.deselectItem(at: index, animated: true)
+        pagerView.scrollToItem(at: index, animated: true)
+        self.pageControl.currentPage = index
+    }
+    
+    func pagerViewDidScroll(_ pagerView: FSPagerView) {
+        guard self.pageControl.currentPage != pagerView.currentIndex else {
+            return
+        }
+        self.pageControl.currentPage = pagerView.currentIndex // Or Use KVO with property "currentIndex"
+    }
+}
 
 extension HomeController : HomeView {
     
@@ -135,6 +208,7 @@ extension HomeController : HomeView {
     
     func showHomeList(repositorys: [Repository]) {
         initTableView()
+        initTableViewHeader()
         mRepositorys = repositorys
         mHomeTableView.reloadData()
     }
@@ -142,6 +216,8 @@ extension HomeController : HomeView {
     func showRefreshRepositories(repositorys: [Repository]) {
         mRepositorys = repositorys
         header.endRefreshing()
+        pagerView.scrollToItem(at: 0, animated: true)
+        mHomeTableView.reloadData()
     }
     
     func showMoreRepositories(repositorys: [Repository]) {

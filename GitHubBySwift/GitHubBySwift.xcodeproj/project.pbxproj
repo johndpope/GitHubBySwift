@@ -14,7 +14,6 @@
 		E51556BA1F5E42F100B71332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51556B81F5E42F100B71332 /* LaunchScreen.storyboard */; };
 		E51556C51F5E42F100B71332 /* GitHubBySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556C41F5E42F100B71332 /* GitHubBySwiftTests.swift */; };
 		E51556D81F5E444F00B71332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556D71F5E444F00B71332 /* AppDelegate.swift */; };
-		E51556DB1F5E44B100B71332 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556D91F5E44B100B71332 /* BaseTabBarController.swift */; };
 		E51556DC1F5E44B100B71332 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556DA1F5E44B100B71332 /* BaseNavigationController.swift */; };
 		E51556DE1F5E44E900B71332 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556DD1F5E44E900B71332 /* UIColor-Extension.swift */; };
 		E51556E61F5E497D00B71332 /* LauncherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51556E41F5E497D00B71332 /* LauncherController.swift */; };
@@ -37,6 +36,11 @@
 		E586A55F1F5EB5F800A74184 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E586A55D1F5EB5F800A74184 /* HomeCell.xib */; };
 		E5D93BC21F60E87900294D01 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BC01F60E87900294D01 /* WebViewController.swift */; };
 		E5D93BC31F60E87900294D01 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D93BC11F60E87900294D01 /* WebViewController.xib */; };
+		E5D93BC51F611B5D00294D01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BC41F611B5D00294D01 /* BaseViewController.swift */; };
+		E5D93BC71F611C5100294D01 /* UINavigationBar-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BC61F611C5100294D01 /* UINavigationBar-Extension.swift */; };
+		E5D93BCB1F6124AB00294D01 /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BC81F6124AB00294D01 /* WRCycleCell.swift */; };
+		E5D93BCC1F6124AB00294D01 /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BC91F6124AB00294D01 /* WRCycleScrollView.swift */; };
+		E5D93BCD1F6124AB00294D01 /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BCA1F6124AB00294D01 /* WRProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +67,6 @@
 		E51556C41F5E42F100B71332 /* GitHubBySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubBySwiftTests.swift; sourceTree = "<group>"; };
 		E51556C61F5E42F100B71332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E51556D71F5E444F00B71332 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E51556D91F5E44B100B71332 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		E51556DA1F5E44B100B71332 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E51556DD1F5E44E900B71332 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		E51556E41F5E497D00B71332 /* LauncherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauncherController.swift; sourceTree = "<group>"; };
@@ -86,6 +89,11 @@
 		E586A55D1F5EB5F800A74184 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		E5D93BC01F60E87900294D01 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		E5D93BC11F60E87900294D01 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		E5D93BC41F611B5D00294D01 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E5D93BC61F611C5100294D01 /* UINavigationBar-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar-Extension.swift"; sourceTree = "<group>"; };
+		E5D93BC81F6124AB00294D01 /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
+		E5D93BC91F6124AB00294D01 /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
+		E5D93BCA1F6124AB00294D01 /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +200,8 @@
 		E51556D11F5E442C00B71332 /* base */ = {
 			isa = PBXGroup;
 			children = (
-				E51556D91F5E44B100B71332 /* BaseTabBarController.swift */,
 				E51556DA1F5E44B100B71332 /* BaseNavigationController.swift */,
+				E5D93BC41F611B5D00294D01 /* BaseViewController.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				E51556DD1F5E44E900B71332 /* UIColor-Extension.swift */,
+				E5D93BC61F611C5100294D01 /* UINavigationBar-Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -287,6 +296,9 @@
 		E51556E31F5E457000B71332 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				E5D93BC81F6124AB00294D01 /* WRCycleCell.swift */,
+				E5D93BC91F6124AB00294D01 /* WRCycleScrollView.swift */,
+				E5D93BCA1F6124AB00294D01 /* WRProxy.swift */,
 				E586A5521F5EA7C900A74184 /* LoadingView.xib */,
 				E586A5531F5EA7C900A74184 /* LoadingView.swift */,
 			);
@@ -412,6 +424,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GitHubBySwift/Pods-GitHubBySwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -426,6 +440,8 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -482,13 +498,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D93BCC1F6124AB00294D01 /* WRCycleScrollView.swift in Sources */,
 				E51557031F5E85F000B71332 /* Observable+ObjectMapper.swift in Sources */,
+				E5D93BC71F611C5100294D01 /* UINavigationBar-Extension.swift in Sources */,
 				E5D93BC21F60E87900294D01 /* WebViewController.swift in Sources */,
 				E51556F21F5E4AD400B71332 /* MeController.swift in Sources */,
 				E51556F91F5E502C00B71332 /* Owner.swift in Sources */,
 				E586A5551F5EA7C900A74184 /* LoadingView.swift in Sources */,
+				E5D93BC51F611B5D00294D01 /* BaseViewController.swift in Sources */,
 				E51556DC1F5E44B100B71332 /* BaseNavigationController.swift in Sources */,
 				E51556EA1F5E4AB800B71332 /* MainController.swift in Sources */,
+				E5D93BCB1F6124AB00294D01 /* WRCycleCell.swift in Sources */,
+				E5D93BCD1F6124AB00294D01 /* WRProxy.swift in Sources */,
 				E51556F51F5E500300B71332 /* HomePresenter.swift in Sources */,
 				E51556DE1F5E44E900B71332 /* UIColor-Extension.swift in Sources */,
 				E51556F81F5E502C00B71332 /* Repository.swift in Sources */,
@@ -499,7 +520,6 @@
 				E586A55E1F5EB5F800A74184 /* HomeCell.swift in Sources */,
 				E51556B21F5E42F100B71332 /* ViewController.swift in Sources */,
 				E51557011F5E814000B71332 /* Observable+Extension.swift in Sources */,
-				E51556DB1F5E44B100B71332 /* BaseTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -102,12 +102,11 @@ extension HomeController : UITableViewDataSource ,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let webViewController = WebViewController()
-//        webViewController.repository = mRepositorys[indexPath.row]
-//        if let navigationController = navigationController {
-//            navigationController.pushViewController(webViewController, animated: true)
-//            
-//        }
+        let webViewController = WebViewController()
+        webViewController.repository = mRepositorys[indexPath.row]
+        if let navigationController = navigationController {
+            navigationController.pushViewController(webViewController, animated: true)
+        }
     }
     
     

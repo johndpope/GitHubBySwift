@@ -35,6 +35,8 @@
 		E586A5571F5EA7E300A74184 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = E586A5561F5EA7E300A74184 /* loading.gif */; };
 		E586A55E1F5EB5F800A74184 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586A55C1F5EB5F800A74184 /* HomeCell.swift */; };
 		E586A55F1F5EB5F800A74184 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E586A55D1F5EB5F800A74184 /* HomeCell.xib */; };
+		E5D93BC21F60E87900294D01 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D93BC01F60E87900294D01 /* WebViewController.swift */; };
+		E5D93BC31F60E87900294D01 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D93BC11F60E87900294D01 /* WebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		E586A5561F5EA7E300A74184 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		E586A55C1F5EB5F800A74184 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		E586A55D1F5EB5F800A74184 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		E5D93BC01F60E87900294D01 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E5D93BC11F60E87900294D01 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +269,8 @@
 				E51556ED1F5E4AC700B71332 /* HomeController.xib */,
 				E51556F01F5E4AD400B71332 /* MeController.swift */,
 				E51556F11F5E4AD400B71332 /* MeController.xib */,
+				E5D93BC01F60E87900294D01 /* WebViewController.swift */,
+				E5D93BC11F60E87900294D01 /* WebViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 				E586A5541F5EA7C900A74184 /* LoadingView.xib in Resources */,
 				E586A55F1F5EB5F800A74184 /* HomeCell.xib in Resources */,
 				E51556BA1F5E42F100B71332 /* LaunchScreen.storyboard in Resources */,
+				E5D93BC31F60E87900294D01 /* WebViewController.xib in Resources */,
 				E51556B71F5E42F100B71332 /* Assets.xcassets in Resources */,
 				E51556E71F5E497D00B71332 /* LauncherController.xib in Resources */,
 				E51556F31F5E4AD400B71332 /* MeController.xib in Resources */,
@@ -476,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E51557031F5E85F000B71332 /* Observable+ObjectMapper.swift in Sources */,
+				E5D93BC21F60E87900294D01 /* WebViewController.swift in Sources */,
 				E51556F21F5E4AD400B71332 /* MeController.swift in Sources */,
 				E51556F91F5E502C00B71332 /* Owner.swift in Sources */,
 				E586A5551F5EA7C900A74184 /* LoadingView.swift in Sources */,

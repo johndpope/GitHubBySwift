@@ -38,11 +38,15 @@ class LoadingView: UIView {
     }
     
     func startAnim() {
-        imageview.startAnimatingGif()
+        if !imageview.isAnimating {
+            imageview.startAnimatingGif()
+        }
     }
     
     func stopAnim() {
-        imageview.stopAnimatingGif()
+        if imageview.isAnimating {
+            imageview.stopAnimatingGif()
+        }
     }
     
 }

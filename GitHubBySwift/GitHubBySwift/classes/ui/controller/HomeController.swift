@@ -169,6 +169,8 @@ extension HomeController : HomeView {
         mRepositorys = repositorys
         header.endRefreshing()
         mHomeTableView.reloadData()
+        // 清除footer更有更多数据状态
+        footer.resetNoMoreData()
     }
     
     func showMoreRepositories(repositorys: [Repository]) {

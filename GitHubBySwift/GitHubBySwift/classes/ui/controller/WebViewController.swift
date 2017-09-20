@@ -39,6 +39,8 @@ extension WebViewController {
             make.height.equalTo(180)
             make.center.equalTo(self.view)
         }
+        
+        loadingView.startAnim()
     }
     
 }
